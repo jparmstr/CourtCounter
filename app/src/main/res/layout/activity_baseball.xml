@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--Table Layout for scoreboard-->
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <!--First row that shows Inning Numbers-->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--Blank TextView above team names-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:gravity="end"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="2"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="3"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="4"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="5"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="6"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="7"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="8"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="9"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="Total"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <!--Second row that shows Team A scores-->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/baseball_team_a_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:padding="8dp"
+                android:text="Team A"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_a_inning_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_red"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_a_inning_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_a_inning_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_a_inning_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_a_inning_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_a_inning_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_a_inning_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_a_inning_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_a_inning_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_a_total_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <!--Third row that shows Team B scores-->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/baseball_team_b_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:padding="8dp"
+                android:text="Team B"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_b_inning_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_b_inning_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_b_inning_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_b_inning_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_b_inning_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_b_inning_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_b_inning_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_b_inning_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_b_inning_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/baseball_team_b_total_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!--Horizontal Layout for Ball, Strike, Out-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--Vertical Layout for Balls-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balls:" />
+
+            <TextView
+                android:id="@+id/baseball_balls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <!--Vertical Layout for Strikes-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strikes:" />
+
+
+            <TextView
+                android:id="@+id/baseball_strikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <!--Vertical Layout for Outs-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outs:" />
+
+            <TextView
+                android:id="@+id/baseball_outs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_gray"
+                android:padding="8dp"
+                android:text="0"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Buttons for Ball, Strike, Hit, Score Run, and Out-->
+    <Button
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorPrimary_baseball"
+        android:onClick="ball"
+        android:text="Ball"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorPrimary_baseball"
+        android:onClick="strike"
+        android:text="Strike"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorPrimary_baseball"
+        android:onClick="hit"
+        android:text="Hit"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorPrimary_baseball"
+        android:onClick="scoreRun"
+        android:text="Score Run"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/colorPrimary_baseball"
+        android:onClick="out"
+        android:text="Player Out"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

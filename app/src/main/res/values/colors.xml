@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#757575</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary_basketball">#FF9800</color>
+    <color name="colorPrimaryDark_basketball">#d47e00</color>
+
+    <color name="colorPrimary_baseball">#283593</color>
+    <color name="colorPrimaryDark_baseball">#1A237E</color>
+
+    <color name="colorPrimary_football">#C62828</color>
+    <color name="colorPrimaryDark_football">#B71C1C</color>
+
+    <color name="colorPrimary_soccer">#2E7D32</color>
+    <color name="colorPrimaryDark_soccer">#1B5E20</color>
+
+</resources>
