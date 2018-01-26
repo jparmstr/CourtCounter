@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="horizontal">
+
+    <!--Container for Team A side-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--Horizontal container for Team Name & Score / SoG & Fouls (landscape orientation)-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <!--Vertical container for Team Name & Score-->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/soccer_team_a_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="16dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Team A"
+                    android:textColor="#616161" />
+
+                <TextView
+                    android:id="@+id/soccer_team_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="56sp" />
+            </LinearLayout>
+
+            <!--Vertical container for Shots On Goal & Fouls-->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/soccer_team_a_sog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="16dp"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="SoG: "
+                    android:textColor="#616161"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/soccer_team_a_fouls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="16dp"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="Fouls: "
+                    android:textColor="#616161"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimary_soccer"
+            android:onClick="teamA_SoG"
+
+            android:text="Shot On Goal"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimary_soccer"
+            android:onClick="teamA_goal"
+            android:text="Goal"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimary_soccer"
+            android:onClick="teamA_foul"
+            android:text="Foul"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <!--Container for Team B side-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--Horizontal container for Team Name & Score / SoG & Fouls (landscape orientation)-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <!--Vertical container for Team Name & Score-->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/soccer_team_b_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="16dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Team B"
+                    android:textColor="#616161" />
+
+                <TextView
+                    android:id="@+id/soccer_team_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="56sp" />
+            </LinearLayout>
+
+            <!--Vertical container for Shots On Goal & Fouls-->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/soccer_team_b_sog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="16dp"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="SoG: "
+                    android:textColor="#616161"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/soccer_team_b_fouls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="16dp"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="Fouls: "
+                    android:textColor="#616161"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimary_soccer"
+            android:onClick="teamB_SoG"
+            android:text="Shot On Goal"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimary_soccer"
+            android:onClick="teamB_goal"
+            android:text="Goal"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimary_soccer"
+            android:onClick="teamB_foul"
+            android:text="Foul"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

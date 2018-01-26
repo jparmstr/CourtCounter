@@ -42,6 +42,28 @@ public class FootballActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+
+        savedInstanceState.putBoolean("teamAInPossession", teamAInPossession);
+        savedInstanceState.putBoolean("lastPlayWasTouchdown", lastPlayWasTouchdown);
+        savedInstanceState.putInt("scoreTeamA", scoreTeamA);
+        savedInstanceState.putInt("scoreTeamB", scoreTeamB);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        teamAInPossession = savedInstanceState.getBoolean("teamAInPossession");
+        lastPlayWasTouchdown = savedInstanceState.getBoolean("lastPlayWasTouchdown");
+        scoreTeamA = savedInstanceState.getInt("scoreTeamA");
+        scoreTeamB = savedInstanceState.getInt("scoreTeamB");
+
+        updateDisplay();
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_options, menu);
         return true;

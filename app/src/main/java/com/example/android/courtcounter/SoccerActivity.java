@@ -44,6 +44,34 @@ public class SoccerActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+
+        savedInstanceState.putInt("scoreTeamA", scoreTeamA);
+        savedInstanceState.putInt("scoreTeamB", scoreTeamB);
+        savedInstanceState.putInt("sogTeamA", sogTeamA);
+        savedInstanceState.putInt("sogTeamB", sogTeamB);
+        savedInstanceState.putInt("foulsTeamA", foulsTeamA);
+        savedInstanceState.putInt("foulsTeamB", foulsTeamB);
+
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        scoreTeamA = savedInstanceState.getInt("scoreTeamA");
+        scoreTeamB = savedInstanceState.getInt("scoreTeamB");
+        sogTeamA = savedInstanceState.getInt("sogTeamA");
+        sogTeamB = savedInstanceState.getInt("sogTeamB");
+        foulsTeamA = savedInstanceState.getInt("foulsTeamA");
+        foulsTeamB = savedInstanceState.getInt("foulsTeamB");
+        
+
+        updateDisplay();
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_options, menu);
         return true;

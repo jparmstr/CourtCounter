@@ -48,6 +48,32 @@ public class BaseballActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+
+        savedInstanceState.putIntArray("scoreTeamA", scoreTeamA);
+        savedInstanceState.putIntArray("scoreTeamB", scoreTeamB);
+        savedInstanceState.putDouble("inning", inning);
+        savedInstanceState.putInt("balls", balls);
+        savedInstanceState.putInt("strikes", strikes);
+        savedInstanceState.putInt("outs", outs);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        scoreTeamA = savedInstanceState.getIntArray("scoreTeamA");
+        scoreTeamB = savedInstanceState.getIntArray("scoreTeamB");
+        inning = savedInstanceState.getDouble("inning");
+        balls = savedInstanceState.getInt("balls");
+        strikes = savedInstanceState.getInt("strikes");
+        outs = savedInstanceState.getInt("outs");
+
+        updateDisplay();
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_baseball, menu);
         return true;
