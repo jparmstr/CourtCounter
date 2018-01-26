@@ -9,11 +9,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class FootballActivity extends AppCompatActivity {
 
     private boolean teamAInPossession = true;
+    private boolean lastPlayWasTouchdown = false;
     private int scoreTeamA = 0;
     private int scoreTeamB = 0;
 
@@ -67,26 +69,32 @@ public class FootballActivity extends AppCompatActivity {
 
     public void changePossession(View view) {
         teamAInPossession = !teamAInPossession;
+        lastPlayWasTouchdown = false;
         updateDisplay();
     }
 
     public void touchdown(View view) {
+        lastPlayWasTouchdown = true;
         updateScore(6);
     }
 
     public void extraPoint(View view) {
+        lastPlayWasTouchdown = false;
         updateScore(1);
     }
 
     public void twoPointConversion(View view) {
+        lastPlayWasTouchdown = false;
         updateScore(2);
     }
 
     public void fieldGoal(View view) {
+        lastPlayWasTouchdown = false;
         updateScore(3);
     }
 
     public void safety(View view) {
+        lastPlayWasTouchdown = false;
         updateScore(2);
     }
 
@@ -94,6 +102,7 @@ public class FootballActivity extends AppCompatActivity {
         scoreTeamA = 0;
         scoreTeamB = 0;
         teamAInPossession = true;
+        lastPlayWasTouchdown = false;
         updateDisplay();
     }
 
@@ -127,5 +136,27 @@ public class FootballActivity extends AppCompatActivity {
         // Team B Score
         TextView scoreView_B = (TextView) findViewById(R.id.football_team_b_score);
         scoreView_B.setText(String.valueOf(scoreTeamB));
+
+        // Get button references
+        Button buttonExtraPoint = (Button) findViewById(R.id.buttonExtraPoint);
+        Button buttonTwoPtConversion = (Button) findViewById(R.id.buttonTwoPtConversion);
+        Button buttonTouchdown = (Button) findViewById(R.id.buttonTouchdown);
+
+        // Enable extra point, 2-pt conversion buttons if last play was Touchdown
+        if (lastPlayWasTouchdown) {
+            buttonExtraPoint.setEnabled(true);
+            buttonExtraPoint.setVisibility(View.VISIBLE);
+            buttonTwoPtConversion.setEnabled(true);
+            buttonTwoPtConversion.setVisibility(View.VISIBLE);
+            buttonTouchdown.setEnabled(false);
+            buttonTouchdown.setVisibility(View.GONE);
+        } else {
+            buttonExtraPoint.setEnabled(false);
+            buttonExtraPoint.setVisibility(View.GONE);
+            buttonTwoPtConversion.setEnabled(false);
+            buttonTwoPtConversion.setVisibility(View.GONE);
+            buttonTouchdown.setEnabled(true);
+            buttonTouchdown.setVisibility(View.VISIBLE);
+        }
     }
 }

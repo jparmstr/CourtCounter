@@ -106,6 +106,7 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/buttonChangePossession"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
@@ -116,6 +117,7 @@
             android:textColor="@android:color/white" />
 
         <Button
+            android:id="@+id/buttonTouchdown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
@@ -126,6 +128,7 @@
             android:textColor="@android:color/white" />
 
         <Button
+            android:id="@+id/buttonExtraPoint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
@@ -136,6 +139,7 @@
             android:textColor="@android:color/white" />
 
         <Button
+            android:id="@+id/buttonTwoPtConversion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
@@ -146,6 +150,7 @@
             android:textColor="@android:color/white" />
 
         <Button
+            android:id="@+id/buttonFieldGoal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
