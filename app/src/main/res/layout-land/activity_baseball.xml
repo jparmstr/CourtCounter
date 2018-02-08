@@ -31,6 +31,7 @@
                     android:text="" />
 
                 <TextView
+                    android:id="@+id/inningLabel1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
@@ -38,6 +39,7 @@
                     android:textAlignment="center" />
 
                 <TextView
+                    android:id="@+id/inningLabel2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
@@ -45,6 +47,7 @@
                     android:textAlignment="center" />
 
                 <TextView
+                    android:id="@+id/inningLabel3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
@@ -52,6 +55,7 @@
                     android:textAlignment="center" />
 
                 <TextView
+                    android:id="@+id/inningLabel4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
@@ -59,6 +63,7 @@
                     android:textAlignment="center" />
 
                 <TextView
+                    android:id="@+id/inningLabel5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
@@ -66,6 +71,7 @@
                     android:textAlignment="center" />
 
                 <TextView
+                    android:id="@+id/inningLabel6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
@@ -73,6 +79,7 @@
                     android:textAlignment="center" />
 
                 <TextView
+                    android:id="@+id/inningLabel7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
@@ -80,6 +87,7 @@
                     android:textAlignment="center" />
 
                 <TextView
+                    android:id="@+id/inningLabel8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
@@ -87,6 +95,7 @@
                     android:textAlignment="center" />
 
                 <TextView
+                    android:id="@+id/inningLabel9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
@@ -94,6 +103,7 @@
                     android:textAlignment="center" />
 
                 <TextView
+                    android:id="@+id/total_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
@@ -449,6 +459,7 @@
 
             <!--Buttons for Ball, Strike, Hit, Score Run, and Out-->
             <Button
+                android:id="@+id/ball_button"
                 android:layout_width="256dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
@@ -459,6 +470,7 @@
                 android:textColor="@android:color/white" />
 
             <Button
+                android:id="@+id/strike_button"
                 android:layout_width="256dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
@@ -469,6 +481,7 @@
                 android:textColor="@android:color/white" />
 
             <Button
+                android:id="@+id/hit_button"
                 android:layout_width="256dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
@@ -489,6 +502,7 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/score_button"
                 android:layout_width="256dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"
@@ -499,6 +513,7 @@
                 android:textColor="@android:color/white" />
 
             <Button
+                android:id="@+id/out_button"
                 android:layout_width="256dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="24dp"

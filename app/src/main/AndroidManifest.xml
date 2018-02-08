@@ -17,9 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BaseballActivity" />
+        <activity android:name=".BaseballActivity_ganellon" />
         <activity android:name=".FootballActivity" />
         <activity android:name=".SoccerActivity"></activity>
+        <activity android:name=".BaseballActivity"></activity>
     </application>
 
 </manifest>

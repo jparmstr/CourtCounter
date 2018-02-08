@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Court Counter</string>
+    <string name="final_text">Final</string>
+    <string name="total_text">Total</string>
 </resources>
