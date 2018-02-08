@@ -12,3 +12,6 @@ Baseball mode features a full scoreboard showing all 9 innings.
 Also in this mode 3 Strikes give you an Out, and 3 Outs advance the game to the next Inning.
 Baseball mode lets you manually go to the next Inning or the previous Inning via a custom Action Bar menu.
 
+<img src="screenshotMain.png" width=500>
+<br>
+<img src="screenshotBaseball.png" width=500>
